@@ -1,0 +1,84 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
+<style>
+  h1 {
+    background-color: powderblue;
+    padding: 5px;
+    margin: 5px;
+    border: solid 3px cornflowerblue;
+  }
+  
+  #intro {
+    background-color: bisque;
+    padding: 5px;
+    margin: 5px;
+    border: solid 3px orange;
+  }
+  
+  #midcolumn {
+	background-color: pink;
+	border: solid 0px red;
+	width: 50%;
+	height: 100%;
+    float: left;
+  }
+
+    #rightcolumn {
+	background-color: palevioletred;
+	border: solid 0px red;
+	width: 50%;
+	height: 100%;
+  float: right;
+  }
+</style>
+
+<script type="text/javascript">
+  function test(){
+    alert("I have a dog named Penpen :D");
+  }
+</script>
+
+  <title>Practical Task 1 - HTML</title>
+  
+  <body>
+    
+    <h1>Let's Get to Know ME Better!</h1>
+    <div>
+      <marquee> ♪(((#^-^)八(^_^*)))♪ </marquee>
+    </div>
+    
+      <div id="intro">
+         Hi, everyone! I'm <span><font color= "red">Vanessa Josephine</font></span>
+         and here's some fun facts about me! <br><br>
+         Before we start, let me introduce myself!  ^^
+      </div>
+        
+      <div id="midcolumn">
+         <ul type= "square"><b>Quick Introduction</b><br><br>
+         <li> Given Name : Vanessa Josephine
+         <li> Surname : Mattea
+         <li> Sex : Female
+         <li> Date of Birth : May 12 <sup>th</sup> 2003
+         <li> Nationality : Indonesian
+         <li> Ethnicity : Chinese
+         <li> Occupation : Student at Deakin University, Burwood Campus, Australia
+         </ul>
+         Click <span onclick="test()"><b><font color= "red">here</font></b></span> to find out more about me!
+      </div>
+
+      <div id="rightcolumn">
+        <img src="PICC.jpg" width="100%"/>
+    
+        <br><br>
+    <button type="button"
+     onclick="document.getElementById('demo').innerHTML = Date()">
+     Click me to know your date and time :D
+    </button>
+
+    <p id="demo"></p>
+
+  </body>
+</head>
+</html>
