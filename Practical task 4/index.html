@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    </head>
+
+    <body>
+        <div id="msg">
+            {{ message }}
+        </div>
+
+        <div id="list">
+            <ol>
+                <li v-for="todo in todos">
+                    <label>
+                    <input type="checkbox"
+                    v-on:change="toggle(todo)"
+                    v-bind:checked="todo.done">
+                    </input>
+
+                    <del v-if="todo.done">
+                    {{ todo.text }}
+                    </del>
+
+                    <span v-else>
+                    {{ todo.text }}
+                    </span>
+                    </label>
+                </li>
+            </ol>
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+
+</html>

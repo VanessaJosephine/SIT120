@@ -1,0 +1,23 @@
+body {
+    background: powderblue;
+    padding: 20px;
+    font-family: Helvetica;
+}
+
+#msg{
+    font-size: 20px;
+    text-align: center;
+    color: paleturquoise;
+    background-color: royalblue;
+    padding: 5px;
+    border: 2px royalblue;
+    border-radius: 5px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+del {
+    color: rgba(0, 0, 0, 0.3);
+}
