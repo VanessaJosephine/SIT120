@@ -1,0 +1,139 @@
+/* General */
+* {
+    box-sizing: border-box;
+    /* I'm planning to add a custom font. */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    background-image: url("background.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation from w3school */
+.navigation_bar {
+    display: flex; /* Lines the buttons side by side */
+    justify-content: space-between; /* Pushes the buttons as far apart from each other as possible */
+    align-items: center; /* On the center of the kuritsuku home button */
+    background-color: #ACC3A6;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1; /* The layer of the component */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home_button img {
+    width: 20%;
+    height: auto;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.navigation_links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation_links li {
+    list-style: none;
+}
+
+.navigation_links li a {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    display: block;
+    cursor: pointer;
+}
+
+/* Dropdown Button from w3school */
+.dropbutton {
+    background-color: #ACC3A6;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #ACC3A6;
+    opacity: 80%;
+    min-width: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    color: white;
+    padding: 50px 20%;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown:hover .dropbutton {
+    background-color: #ACC3A6;
+}
+
+/* Slider (Carousel) */
+.slider {
+}
+
+/* Feature */
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature, img {
+    width: 100%;
+    height: auto;
+}
+
+/* Category */
+.category {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category > * {
+    flex: 1 1 30em;
+    padding: 16px;
+}
+
+/* Adds a nice shadow underneath the images to make it pop */
+.category img{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+/* I will add cool effects later with the help of JavaScript and Vue */
+.category >*:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
