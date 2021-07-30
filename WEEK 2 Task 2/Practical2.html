@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Practical2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- Opening Screen
+    Users will be welcomed with an interactive image with Kuritsuku's logo -->
+    <div class="main_screen">
+        <img src="opening.png" alt="Main Picture">
+    </div>
+    <!-- Opening Screen end-->
+    
+    <!-- Navigation Bar start
+    I will switch to the navigation bar provided by Vue later. For now, CSS will suffice.
+    For the CSS navigation bar, I followed the tutorial from w3school. -->
+    <nav class="navigation_bar">
+        <!-- Kuritsuku Home Button -->
+        <div class="home_button">
+                <img src="kuritsuku.png">
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="navigation_links">
+            <ul>
+                <!-- Search Bar -->
+                <li><a href="#">Search Bar</a></li>
+        
+                <!-- Dropdown Bar 
+                The dropdown bar will be made more cool with animations, the placement may change in the future. -->
+                <li class="dropdown" style="float: left">
+                    <button class="dropbutton">Dropdown Icon here</button>
+                    <div class="dropdown_content">
+                        <a href="#">Home</a>
+                        <a href="#">Shop</a>
+                        <a href="#">About Us</a>
+                </li>
+
+                <!-- Cart
+                The Cart button will take the user to the Cart Menu to remove, add or/and checkout the products -->
+                <li><a href="#">Cart</a></li>
+
+                <!-- User's Profile
+                The User's Profile button will take the user to the Profile Menu, with information about the user's
+                shipping address, etc -->
+                <li><a href="#">User Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navigation Bar end -->
+
+    <main>
+        <!-- Image Slider (carousel) start
+        Promotions and product bundles will be displayed here -->
+        <div class="slider">
+           <div class="slides">
+                <!-- Clickable Buttons start -->
+                
+                <!-- Clickable Buttons end -->
+           
+                <!-- Images start -->
+                <div class="slide first">
+
+                </div>
+                <div class="slide second">
+
+                </div>
+                <div class="slide third">
+
+                </div>
+                <!-- Images end -->
+
+                <!-- Automatic slides start -->
+                <div class="auto_slides">
+                    <div class="auto_button1"></div>
+                    <div class="auto_button2"></div>
+                    <div class="auto_button3"></div>
+                </div>
+                <!-- Automatic slides end -->
+
+                <!-- Manual slides start -->
+                <div class="manual_slides">
+                    <label for="radio1" class="manual_button1"></div>
+                    <label for="radio2" class="manual_button1"></div>
+                    <label for="radio3" class="manual_button1"></div>
+                </div>
+                <!-- Manual slides end -->
+            </div> 
+        </div>
+        <!-- Image Slider end -->
+
+        <!-- Featured Product start 
+            A featured product will be displayed with a short description + link
+            and the promotional video that will automatically plays in a loop. -->
+        <div class="feature">
+
+            <!-- Featured Post + Link to Shop the Product -->
+            <div class="feature_post">
+
+            </div>
+
+            <!-- Featured Video -->
+            <div class="feature_vid">
+
+            </div>
+
+        </div>
+        <!-- Featured Product end -->
+
+        <!-- Best Seller Products start
+            Best seller products from each category will be shown here.
+            I will design an interactive scroll effect here where users will have
+            to scroll trough the content first before continue.
+            I will make a 2 collumn grid here. -->
+        <div class="bestseller">
+            <div class="bestseller_post"></div>
+            <div class="bestseller_product"></div>
+        </div>
+        <!-- Best Seller Products end -->
+
+        <!--Product Category start 
+            Shows product category in a grid format.
+            Once clicked, the users will be directed to the respective page.
+            There's 6 categories here, each has its own products.  -->
+        <div class="category">
+
+            <div class="cleanser">
+                <a href="#">
+                <img src="4.png" alt="Cleanser">
+                </a>
+            </div>
+            <div class="toner">
+                <a href="#">
+                <img src="3.png" alt="Toner">
+                </a>
+            </div>
+            <div class="serum">
+                <a href="#">
+                <img src="5.png" alt="Essence, Serum, Ampoule">
+                </a>
+            </div>
+            <div class="moisturizer">
+                <a href="#">
+                 <img src="2.png" alt="Moisturizer">
+                </a>
+            </div>
+            <div class="sun">
+                <a href="#">
+                <img src="7.png" alt="Sun Care">
+                </a>
+            </div>
+            <div class="mask">
+                <a href="#">
+                <img src="6.png" alt="Face Mask">
+                </a>
+
+            </div>
+        <!--Product Category end -->
+    </main>
+
+    <!-- Live Chat Feature-->
+    <button class="livechat">
+        Chat with an admin
+    </button>
+
+<footer>
+    <footer class="footer_box">
+        <div class="footer_content">
+            <h2 style="color: #ACC3A6;">Thank you</h3>
+            <div class="footer_links">
+                <ul>
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</footer>
+</html>
