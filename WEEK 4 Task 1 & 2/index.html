@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    </head>
+    <body>
+        <div id="app">
+            {{message}}
+        </div>
+
+        <div id="app3">
+            <button v-on:click="hid">Hidden</button>
+            <button v-on:click="show">Show</button>
+            <span v-if="seen"><br>Now you see me!</span>
+            <span v-else></span>
+        </div>
+
+        <div id="app4">
+            <p>{{name}}</p><br>
+            <ol>
+                <li v-for="i in todos">
+                    {{i.item}}
+                </li>
+            </ol><br>
+        </div>
+
+        <div id="app5">
+            <p>My age is: {{value}}</p><br>
+            <button v-on:click="increase">Increase</button>
+            <button v-on:click="decrease">Decrease</button>
+            <button v-on:click="reset">Reset</button><br>
+        </div>
+        <script>
+            //DECLARATIVE RENDERING
+            var app = new Vue ({
+                el: '#app', //LINKS TO THE ELEMENT (I.G #APP), ADD COMA AFTER EACH ELEMENT
+                data: {
+                    message: 'Hello! Nice to meet you.',
+                }
+            })
+
+            //CONDITIONAL AND LOOPS
+            var app3 = new Vue ({
+                el: '#app3',
+                data: {
+                    seen: true,
+                },
+                methods: {
+                hid: function() {
+                    app3.seen = false
+                },
+                show: function() {
+                    app3.seen = true
+                }
+
+            }
+            })
+
+            //ARRAYS
+            var app4 = new Vue ({
+                el: '#app4',
+                data: {
+                    name: "This is my name",
+                    todos: [
+                        {item:"Vanessa"},
+                        {item:"Josephine"},
+                    ]
+                }
+            })
+
+            //HANDLING USER INPUT (BUTTONS)
+            var app5 = new Vue ({
+                el: '#app5',
+                data: {
+                    value: 0,
+                },
+                methods: {
+                    increase: function() {
+                        this.value = this.value + 1
+                    },
+                    decrease: function() {
+                        this.value = this.value - 1
+                    },
+                    reset: function() {
+                        this.value = 0
+                    }
+                }
+            })
+        </script>
+        
+    </body>
+</html>
+
+<style>
+* {
+    padding: 0;
+    margin: 0;
+}
+button {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid gray;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+#app3, #app {
+    background-color: lightpink;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+#app4 {
+    background-color: lightsalmon;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+#app5 {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+</style>
